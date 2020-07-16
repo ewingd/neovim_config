@@ -59,6 +59,14 @@ set cmdheight=2
 
 set colorcolumn=80,120
 
+" Create folds inside every pair of { and }
+set foldmethod=marker
+set foldmarker={,}
+" Automatically start with all folds open, wtih foldlevel set to the deepest
+" fold in the current file.
+let &foldlevel = max(map(range(1, line('$')), 'foldlevel(v:val)'))
+autocmd BufWinEnter * let &foldlevel = max(map(range(1, line('$')), 'foldlevel(v:val)'))
+
 colorscheme gotham
 
 " Neomake Config
