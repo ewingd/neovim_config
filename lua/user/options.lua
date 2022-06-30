@@ -21,3 +21,5 @@ vim.opt.undofile = true
 vim.opt.clipboard = "unnamedplus"               -- allows access to system clipboard?
 
 vim.opt.scrolloff = 8
+
+vim.opt.termguicolors = true
