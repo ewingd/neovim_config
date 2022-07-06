@@ -18,7 +18,7 @@ vim.g.maplocalleader = " "
 -- command = c
 
 -- File explorer on left
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -35,3 +35,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<cr>", opts)
 -- Navigate buffers with "L" and "H"
 keymap("n", "<S-l>", ":bnext<cr>", opts)
 keymap("n", "<S-h>", ":bprevious<cr>", opts)
+
+-- Telescope
+keymap("n", "<c-p>", "<cmd>Telescope find_files<cr>", opts);
+keymap("n", "<c-f>", "<cmd> Telescope live_grep<cr>", opts);

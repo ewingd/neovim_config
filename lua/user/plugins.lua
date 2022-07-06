@@ -70,6 +70,23 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use LS installer
 
+    -- Telecope
+    use "nvim-telescope/telescope.nvim"
+    use "nvim-telescope/telescope-media-files.nvim"
+
+    -- Treesitter
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+    }
+
+    -- File Explorer
+    use 'kyazdani42/nvim-web-devicons'
+    use "kyazdani42/nvim-tree.lua"
+
+    -- Git
+    use "lewis6991/gitsigns.nvim"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- This goes after all plugins
     if PACKER_BOOTSTRAP then

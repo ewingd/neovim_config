@@ -5,3 +5,7 @@ require "user.colorscheme"
 require "user.cmp"
 -- Require init.lua from lsp directory
 require "user.lsp"
+require "user.telescope"
+require "user.treesitter"
+require "user.nvim-tree"
+require "user.gitsigns"
