@@ -23,3 +23,5 @@ vim.opt.clipboard = "unnamedplus"               -- allows access to system clipb
 vim.opt.scrolloff = 8
 
 vim.opt.termguicolors = true
+
+vim.opt.mouse = "a"                             -- allow the mouse to be used

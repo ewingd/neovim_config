@@ -50,6 +50,10 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
 
+    -- Bufferline
+    use "akinsho/bufferline.nvim"
+    use "moll/vim-bbye"
+
     -- Colorschemes
     use "savq/melange"
     use 'folke/tokyonight.nvim'
