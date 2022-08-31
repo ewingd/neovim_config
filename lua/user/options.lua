@@ -25,3 +25,8 @@ vim.opt.scrolloff = 8
 vim.opt.termguicolors = true
 
 vim.opt.mouse = "a"                             -- allow the mouse to be used
+
+-- TODO: Move to a filetype specific option?
+vim.opt.foldenable = true
+vim.opt.foldmethod = "indent"
+vim.opt.foldlevelstart = 1                      -- When opening a class definition, start with methods folded
