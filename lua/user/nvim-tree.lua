@@ -88,6 +88,11 @@ nvim_tree.setup {
     number = false,
     relativenumber = false,
   },
+  filters = {
+    custom = {
+      ".git" --ignore .git directory
+    },
+  },
   -- quit_on_open = 0,
   -- git_hl = 1,
   -- disable_window_picker = 0,
